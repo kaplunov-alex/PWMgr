@@ -86,3 +86,4 @@ mvnw.cmd
 secrets/
 credentials/
 tmpclaude*
+.claude/
