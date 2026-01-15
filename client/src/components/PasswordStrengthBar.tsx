@@ -16,7 +16,7 @@ export function PasswordStrengthBar({ password }: Props) {
     if (/[a-z]/.test(pwd)) score++;
     if (/[A-Z]/.test(pwd)) score++;
     if (/\d/.test(pwd)) score++;
-    if (/[!@#$%^&*()_+\-=\[\]{}|;:,.<>?]/.test(pwd)) score++;
+    if (/[!@#$%^&*()_+\-=[\]{}|;:,.<>?]/.test(pwd)) score++;
 
     let label: string;
     if (score <= 2) {

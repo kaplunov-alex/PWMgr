@@ -17,7 +17,6 @@ export function Dashboard({ onLogout }: Props) {
     updateEntry,
     deleteEntry,
     searchEntries,
-    refresh,
     clearError,
   } = useEntries(true);
 
@@ -31,6 +30,7 @@ export function Dashboard({ onLogout }: Props) {
       searchEntries(searchQuery);
     }, 300);
     return () => clearTimeout(timeoutId);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [searchQuery]);
 
   const handleAddNew = () => {
